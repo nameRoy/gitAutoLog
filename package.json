@@ -1,0 +1,35 @@
+{
+  "name": "gitautolog",
+  "version": "3.0.0",
+  "description": "结合@commitlint/cli @commitlint/config-conventional husky commitizen lint-staged conventional-changelog conventional-changelog-cli实践自动生成更新日志功能",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nameRoy/gitAutoLog.git"
+  },
+  "author": "nameRoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nameRoy/gitAutoLog/issues"
+  },
+  "homepage": "https://github.com/nameRoy/gitAutoLog#readme",
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/cz-commitlint": "^13.1.0",
+    "commitizen": "^4.2.4",
+    "husky": "^7.0.1",
+    "standard-version": "^9.3.1"
+  }
+}
